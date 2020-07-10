@@ -23,6 +23,9 @@ nav{
 .navScroll {
    background-color:  #174dad;
 }
+.navLogo {
+    font-size: 2rem;
+}
 .navMenu {
     display: flex;
 }
@@ -59,7 +62,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 200px;
     h1{
         font-size: 8.8rem;
         font-weight: 900;

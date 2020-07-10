@@ -1,9 +1,11 @@
 @import "helpers/setup";
+@import "helpers/mixins";
 
 @import "components/global";
 @import "components/preloader";
 @import "components/header";
 @import "components/about";
 @import "components/skills";
+@import "components/portfolio";
 @import "components/blog";
 @import "components/contact";

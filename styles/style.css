@@ -408,12 +408,18 @@ footer p {
 .top i {
   background: #174dad;
   color: #fff;
+  border: 2px solid #174dad;
   -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
   width: 40px;
   height: 40px;
   text-align: center;
   line-height: 40px;
+}
+
+.top i:hover, .top i:focus {
+  color: #000;
+  background-color: transparent;
 }
 
 .scrollTopShow {
@@ -451,6 +457,10 @@ nav {
 
 .navScroll {
   background-color: #174dad;
+}
+
+.navLogo {
+  font-size: 2rem;
 }
 
 .navMenu {
@@ -502,7 +512,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 .banner h1 {
@@ -650,7 +660,7 @@ ul li {
   text-transform: capitalize;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 3.5;
+  padding: 20px;
 }
 
 .aboutMe .aboutImage {
@@ -672,6 +682,8 @@ ul li {
   letter-spacing: 1px;
   border: 2px solid #174dad;
   padding: 18px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .aboutBtns a:first-of-type {
@@ -764,6 +776,41 @@ ul li {
   padding-top: 15px;
 }
 
+.portfolioArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 70px;
+}
+
+.projectImage {
+  margin-top: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08);
+  width: 40vw;
+  padding: 10px;
+}
+
+.projectContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40vw;
+}
+
 .blogsSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,19 +872,58 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 75%;
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 70px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  font-size: 2rem;
+}
+
+form .formControl {
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  font-size: 1.5rem;
+  font-family: Poppins, Arial, sans-serif;
+  color: #797979;
+  line-height: 1.42857143;
+}
+
+form .formControl:last-of-type {
+  width: 100%;
+  margin-right: 0;
+}
+
+form textarea {
+  border-style: none;
+  height: 170px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+form .formButton {
+  color: #174dad;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border-style: none;
+  border: 2px solid #174dad;
+  width: 230px;
+  padding: 15px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+form .formButton:hover, form .formButton:focus {
+  color: #fff;
+  background-color: #174dad;
 }
