@@ -1,7 +1,6 @@
 .skillList{
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
-    justify-content: center;
     grid-row-gap: 2rem;
     padding: 0 10rem;
 }

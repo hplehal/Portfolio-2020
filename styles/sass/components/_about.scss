@@ -1,10 +1,48 @@
 .aboutMe {
     display: flex;
     justify-content: space-around;
-    margin: 50px auto ;
+    padding-bottom: 50px;
+    h3 {
+        color: #174dad;
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 3.5;
+    }
+    .aboutImage {
+        width:35vw;
+    }
     img{
-        width: 90%;
         box-shadow: -20px 20px;
+    }
+}
+
+.aboutBtns{
+    padding-top: 50px;
+    a {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        border: 2px solid #174dad;
+        padding: 18px 20px; 
+        &:first-of-type{
+            color: #fff;
+            background-color: #174dad;
+            margin-right: 30px;
+            &:hover, &:focus {
+                color: #174dad;
+                background-color: transparent;
+            }
+        }
+
+        &:last-of-type {
+            color:#174dad;
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #174dad;
+            }
+        }
+
     }
 }
 
@@ -12,5 +50,6 @@
     display: flex;
     flex-direction: column;
     width: 40vw;
+    padding-left: 50px;
     justify-content: center;
 }

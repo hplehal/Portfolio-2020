@@ -1,7 +1,15 @@
+
 .home {
     background-color: rgba(14, 26, 58, 0.7);
 }
+
 nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 25px 150px;
@@ -13,8 +21,7 @@ nav{
     font-weight: 700;
 }
 .navScroll {
-    // background-color: #000;
-   background-color:  #174dad
+   background-color:  #174dad;
 }
 .navMenu {
     display: flex;
@@ -52,10 +59,15 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 150px;
     h1{
         font-size: 8.8rem;
         font-weight: 900;
+    }
+    p{
+        line-height: 1.5;
+        font-size: 3rem;
+        font-weight: 700;
     }
 }
 
@@ -139,4 +151,7 @@ ul{
     left: 0;
     overflow: hidden;
     z-index: 3;
+    svg{
+        fill: #e9ebf8;
+    }
 }

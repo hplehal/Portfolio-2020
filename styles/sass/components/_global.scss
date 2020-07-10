@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 
 section{
     text-align: center;
+    padding: 100px 0;
+    &:nth-child(odd) {
+        background-color: #e9ebf8;
+    }
 }
 
 .sectionTitle {
@@ -54,14 +58,46 @@ section{
     }
 }
 
-h1, h2, h3, h4, .navItem, .skilsItem h3{
+h1, h2, h3, h4, .navItem{
     font-family: 'Montserrat', sans-serif;
 }
 
 footer{
+    color: #fff;
+    padding: 90px 0;
+    background-color:#174dad ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3.3rem;
+    }
+    .socialLinks {
+        text-align: center;
+        margin-bottom: 20px;
+        a {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 2rem;
+            color: #fafafa;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.3s ease-in-out;
+            &:hover, &:focus {
+                color: #174dad ;
+                background-color: #fff;
+            }
+        }
+
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
 }
 
 
@@ -74,7 +110,6 @@ footer{
     opacity: 0;
     transition: all 0.3s ease-in-out;
     i {
-        background: #313131;
         background: #174dad;
         color: #fff;
         box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);

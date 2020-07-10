@@ -309,6 +309,11 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
   text-align: center;
+  padding: 100px 0;
+}
+
+section:nth-child(odd) {
+  background-color: #e9ebf8;
 }
 
 .sectionTitle {
@@ -334,11 +339,14 @@ section {
   background-image: url(../assets/images/title_bg.png);
 }
 
-h1, h2, h3, h4, .navItem, .skilsItem h3 {
+h1, h2, h3, h4, .navItem {
   font-family: 'Montserrat', sans-serif;
 }
 
 footer {
+  color: #fff;
+  padding: 90px 0;
+  background-color: #174dad;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,6 +357,40 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.3rem;
+}
+
+footer .socialLinks {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer .socialLinks a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 2rem;
+  color: #fafafa;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .socialLinks a:hover, footer .socialLinks a:focus {
+  color: #174dad;
+  background-color: #fff;
+}
+
+footer p {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .top {
@@ -364,7 +406,6 @@ footer {
 }
 
 .top i {
-  background: #313131;
   background: #174dad;
   color: #fff;
   -webkit-box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
@@ -386,6 +427,12 @@ footer {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,12 +502,18 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  padding-top: 150px;
 }
 
 .banner h1 {
   font-size: 8.8rem;
   font-weight: 900;
+}
+
+.banner p {
+  line-height: 1.5;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 ul {
@@ -579,19 +632,66 @@ ul li {
   z-index: 3;
 }
 
+.svgDivider svg {
+  fill: #e9ebf8;
+}
+
 .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
+.aboutMe h3 {
+  color: #174dad;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.5;
+}
+
+.aboutMe .aboutImage {
+  width: 35vw;
 }
 
 .aboutMe img {
-  width: 90%;
   -webkit-box-shadow: -20px 20px;
           box-shadow: -20px 20px;
+}
+
+.aboutBtns {
+  padding-top: 50px;
+}
+
+.aboutBtns a {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 2px solid #174dad;
+  padding: 18px 20px;
+}
+
+.aboutBtns a:first-of-type {
+  color: #fff;
+  background-color: #174dad;
+  margin-right: 30px;
+}
+
+.aboutBtns a:first-of-type:hover, .aboutBtns a:first-of-type:focus {
+  color: #174dad;
+  background-color: transparent;
+}
+
+.aboutBtns a:last-of-type {
+  color: #174dad;
+}
+
+.aboutBtns a:last-of-type:hover, .aboutBtns a:last-of-type:focus {
+  color: #fff;
+  background-color: #174dad;
 }
 
 .aboutContent {
@@ -603,6 +703,7 @@ ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40vw;
+  padding-left: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -613,9 +714,6 @@ ul li {
   display: grid;
   -ms-grid-columns: (minmax(100px, 1fr))[4];
       grid-template-columns: repeat(4, minmax(100px, 1fr));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   grid-row-gap: 2rem;
   padding: 0 10rem;
 }
@@ -678,6 +776,41 @@ ul li {
 .blogsSection article {
   margin: 50px;
   width: 50vw;
+  -webkit-box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.blogsSection article h3 {
+  color: #111;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.blogsSection article p {
+  font-size: 1.5rem;
+}
+
+.blogsSection article:hover img, .blogsSection article:focus img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogsSection article:hover h3, .blogsSection article:focus h3 {
+  color: #174dad;
+}
+
+.blogsSection article .blogImg {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+.blogsSection article .blogImg img {
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 
 .blogsSection article .articleContent {
