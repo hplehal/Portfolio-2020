@@ -1,0 +1,142 @@
+.home {
+    background-color: rgba(14, 26, 58, 0.7);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 150px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navScroll {
+    // background-color: #000;
+   background-color:  #174dad
+}
+.navMenu {
+    display: flex;
+}
+
+.navItem {
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.85);
+        pointer-events: none;
+        opacity: 0;
+        transform: translateY(7px);
+        transition: -webkit-transform .3s cubic-bezier(0.55,.085,.68,.53),opacity .2s cubic-bezier(0.55,.085,.68,.53);
+        transition: transform .3s cubic-bezier(0.55,.085,.68,.53),opacity .2s cubic-bezier(0.55,.085,.68,.53);
+    }
+}
+
+
+
+.banner {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    h1{
+        font-size: 8.8rem;
+        font-weight: 900;
+    }
+}
+
+ul{ 
+    display: flex;
+    li{
+        padding: 10px;
+    }
+}
+// Arrow Down 
+.goDown {
+    position: absolute;
+    bottom: 15px;
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+    a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        opacity: 0.9;
+        animation: goDownAnim 1.5s linear 0s infinite;
+        position: relative;
+        &:hover, &:focus {
+            span{
+                &:last-of-type {
+                    top: -10px;
+                }
+                &:last-of-type:before {
+                    transform: rotate(-90deg);
+                }
+
+                &:last-of-type:after {
+                    transform: rotate(-270deg);
+                }
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        position: relative;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(-126deg);
+            transform-origin: 0% 45%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:before{
+            transform: rotate(-54deg);
+        }
+        &:last-of-type {
+            transform: scale(0.7);
+            top: -8px;
+            left: -3px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+@keyframes goDownAnim {
+    0% {
+              transform: translateY(-4px); }
+    50% {
+              transform: translateY(4px); }
+    100% {
+              transform: translateY(-4px); } 
+  }
+  
+.svgDivider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    z-index: 3;
+}

@@ -4,55 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tej Lehal | Under Construction</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media (min-width: 768px) {
-            body {
-                padding-top: 150px;
-            }
-        }
-
-        h1 {
-            font-size: 50px;
-        }
-
-        body {
-            font: 20px Helvetica, sans-serif;
-            color: #333;
-        }
-
-        article {
-            display: block;
-            text-align: left;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        a {
-            color: #dc8100;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #333;
-            text-decoration: none;
-        }
-    </style>
+    <title>Tej Lehal | Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 
-
-<article>
-    <h1>Under Construction!</h1>
-    <div>
-        <p>Sorry for the inconvenience but The site is under a big construction at the moment. If you need to you can
-            always <a href="mailto:tejlehal13@gmail.com">contact me</a>, otherwise we&rsquo;ll be back online soon!</p>
-        <p>&mdash; Tej Lehal</p>
+<body>
+    <div class="pageLoader startLoad">
+        <div class="loader startLoad"></div>
     </div>
-</article>
+
+    <div class="top">
+        <a href="#home" class="smoothScroll"><i class="fa fa-angle-up fa-2x"></i></a>
+    </div>
+
+    <header class="home" id="home">
+        <div class="fullHeight type" data-parallax="scroll" data-image-src="./assets/images/headerImage.jpg">
+            <nav>
+                <div class="navLogo">
+                    <a>Tej<span class="dotHeader">.</span></a>
+                </div>
+                <div class="navMenu">
+                    <ul class="navBar">
+                        <li><a class="navItem smoothScroll active" href="#">Home</a></li>
+                        <li><a class="navItem smoothScroll" href="#about">About</a></li>
+                        <li><a class="navItem smoothScroll" href="#skills">Skills</a></li>
+                        <li><a class="navItem smoothScroll" href="#portfolio">Portfolio</a></li>
+                        <li><a class="navItem smoothScroll" href="#blogs">Blogs</a></li>
+                        <li><a class="navItem smoothScroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="banner">
+                <h1>Hi! I'm Tej.</h1>
+                <p>Web Developer</p>
+                <p>Specialized in</p>
+                <p><span id="typed"></span></p>
+                <div id="typedStrings">
+                    <span>Creative Applications.</span>
+                    <span>Responsive Design.</span>
+                    <span>Accessibility</span>
+                </div>
+                </p>
+            </div>
+            <div class="goDown scrollSvg">
+                <a href="#about" class="smoothScroll">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="svgDivider">
+                <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 200" style="display: block;"
+                    data-height="200">
+                    <polygon style="fill: rgb(255, 255, 255);" points="-4,24 800,198 1604,24 1604,204 -4,204 ">
+                    </polygon>
+                    <polygon style="opacity: 1;fill: rgba(255, 255, 255, 0.5);"
+                        points="-4,12 -4,24 800,198 1604,24 1604,11.833 800,198 "></polygon>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="aboutMe wrapper">
+            <div class="aboutImage animated">
+                <img src="./assets/images/about-img.jpg" alt="" srcset="">
+            </div>
+            <div class="aboutContent animated">
+                <h3 class="animated">Hi There! I am Tej Lehal</h3>
+                <p class="animated">I am a web developer with a background in Computer Science. I have a strong interest
+                    in creating
+                    accessible, responsive and well designed applications that will improve my skills and will let me
+                    grow as a developer.
+                </p>
+                <div class="about_btns animated animatedScroll fadeInUp" style="animation-delay: 0.3s">
+                    <a href="./assets/Hartej's Resume.pdf" target="_blank">Download CV</a>
+                    <a href="#contact" class="smoothScroll">Contact Me</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="skills">
+        <div class="skills wrapper">
+            <h2 class="sectionTitle">Skills</h2>
+            <ul class="skillList" data-aos="fade-up" data-aos-duration="1500">
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-sass" aria-hidden="true"></i>
+                    </div>
+                    <h3>Sass</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-js" aria-hidden="true"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                    </div>
+                    <h3>React</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <img src="./assets/images/icons/icons8-jquery.svg" alt="Jquery Icon" class="skillsIcon"
+                            aria-hidden="true">
+                    </div>
+                    <h3>jQuery</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-git-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Git/Github</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
+                    </div>
+                    <h3>Accessibility</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Responsive</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fas fa-fire" aria-hidden="true"></i>
+                    </div>
+                    <h3>Firebase</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fas fa-terminal" aria-hidden="true"></i>
+                    </div>
+                    <h3>Terminal/Vim</h3>
+                </li>
+                <li class="skillsItem">
+                    <div>
+                        <i class="fab fa-node-js" aria-hidden="true"></i>
+                    </div>
+                    <h3>Node JS</h3>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="portfolio" class="projects">
+        <h2 class="sectionTitle">Projects</h2>
+        <article>
+            <img src="" alt="" srcset="">
+        </article>
+    </section>
+    <section id="blogs">
+        <div class="blog wrapper">
+            <h2 class="sectionTitle">Blogs</h2>
+            <div class="blogsSection">
+                <article>
+                    <div class="blogImg">
+                        <img src="./assets/images/blog-1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="articleContent">
+                        <span class="bold">May 19, 2020</span>
+                        <a href="https://medium.com/@tejlehal13/web-accessibility-why-we-need-it-d68dacf1e644">
+                            <h3>Web Accessibility: Why we need it.</h3>
+                        </a>
+                        <p>While doing the bootcamp at Juno College, our mentors told us the importance of Accessibility
+                            when building websites...</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="./assets/images/blog-1.jpg" alt="" srcset="">
+                    <div class="articleContent">
+                        <span class="bold">March 31, 2020</span>
+                        <a href="https://medium.com/@tejlehal13/lets-p-o-u-r-it-all-out-in-a11y-d80ab0734649">
+                            <h3>Let’s P.O.U.R. it all out in A11y</h3>
+                        </a>
+                        <p>I recently attended the a11yTO 2020 camp where many well respected people in the
+                            accessibility
+                            world are there to share their knowledge and vision to all developers...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contactMe wrapper">
+            <h2 class="sectionTitle">Contact Me</h2>
+            <form action="">
+                <label class="sr-only" for="name">Name:</label>
+                <input type="text" name="Name" placeholder="Name" id="name" />
+
+                <label class="sr-only" for="email">Email:</label>
+                <input type="email" name="Email" placeholder="Email address" id="email" />
+
+                <label class="sr-only" for="message">Message</label>
+                <textarea name="message" placeholder="Message" id="message"></textarea>
+                <button class="formButton" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h2>Tej Lehal</h2>
+        <div class="socialLinks">
+            <ul>
+                <li>
+                    <a href="#" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Medium" target="_blank">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy; 2020 TejLehal🧞‍♂️ | All rights reserved</p>
+    </footer>
+
+    <!-- load Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+    <!--typed.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!--parallax.min.js-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- load in script.js -->
+    <script src="script.js"></script>
+
+</body>
 
 </html>

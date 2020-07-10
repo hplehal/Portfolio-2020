@@ -1,0 +1,14 @@
+.blogsSection {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    article{
+        margin: 50px;
+        width: 50vw;
+        .articleContent{
+            padding:20px;
+        }
+    }
+
+}
+
