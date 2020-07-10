@@ -40,7 +40,6 @@ section{
     padding-bottom: 75px;
     font-size: 4.5rem;
     font-weight: 900;
-    // color: #242424;
     color: #174dad;
     text-transform: capitalize;
     display: inline-block;
@@ -55,6 +54,9 @@ section{
         width: 107px;
         height: 10px;
         background-image: url(../assets/images/title_bg.png);
+    }
+    @include responsiveMedia(phone) {
+        font-size: 3.5rem;
     }
 }
 

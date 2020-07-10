@@ -18,4 +18,33 @@
     align-items: center;
     justify-content: center;
     width: 40vw;
+    h3 {
+        color:#174dad;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+.projectBtns {
+        text-align: center;
+        a {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 2.5rem;
+            color: #174dad;
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.3s ease-in-out;
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #174dad;
+            }
+        }
+}
+
+.webInfra {
+    font-size: 2.5rem;
+    font-weight: 700;
 }

@@ -41,5 +41,17 @@
       
     }
 
+    @include responsiveMedia(tablet) {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+    }
+
+    @include responsiveMedia(phone) {
+        article {
+            width: 80vw;
+        }
+    }
+
 }
 
