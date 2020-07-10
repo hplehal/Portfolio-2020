@@ -445,7 +445,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 25px 150px;
+  padding: 8px 150px;
   background-color: transparent;
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
