@@ -351,7 +351,7 @@ h1, h2, h3, h4, .navItem {
 
 footer {
   color: #fff;
-  padding: 90px 0;
+  padding: 40px 0;
   background-color: #174dad;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,6 +875,18 @@ ul li {
   margin-top: 70px;
 }
 
+@media (max-width: 900px) {
+  .portfolioArticle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .projectImage {
   margin-top: 10px;
   background-color: #fff;
@@ -882,6 +894,13 @@ ul li {
           box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.08);
   width: 40vw;
   padding: 10px;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .projectImage {
+    width: 80vw;
+  }
 }
 
 .projectContent {
@@ -905,6 +924,13 @@ ul li {
   color: #174dad;
   font-size: 3rem;
   font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .projectContent {
+    width: 80vw;
+  }
 }
 
 .projectBtns {
