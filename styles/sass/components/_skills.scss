@@ -1,4 +1,5 @@
 .skillList{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-row-gap: 2rem;

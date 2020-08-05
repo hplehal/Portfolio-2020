@@ -33,6 +33,7 @@
         line-height: 1.5;
     }
     @include responsiveMedia(smallTablet){
+        padding: 40px 0;
         width: 80vw;
     }
 }

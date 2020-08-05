@@ -66,12 +66,19 @@ nav{
     h1{
         font-size: 8.8rem;
         font-weight: 900;
+      
     }
     p{
         line-height: 1.5;
         font-size: 3rem;
         font-weight: 700;
     }
+    @include responsiveMedia(tablet) {
+        h1{
+            font-size: 6rem;
+        }
+    }
+ 
 }
 
 ul{ 

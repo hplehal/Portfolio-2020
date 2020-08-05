@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
   text-align: center;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 section:nth-child(odd) {
@@ -530,6 +530,12 @@ nav {
   line-height: 1.5;
   font-size: 3rem;
   font-weight: 700;
+}
+
+@media (max-width: 930px) {
+  .banner h1 {
+    font-size: 6rem;
+  }
 }
 
 ul {
@@ -785,6 +791,7 @@ ul li {
 }
 
 .skillList {
+  margin-top: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(100px, 1fr))[4];
@@ -929,6 +936,7 @@ ul li {
 
 @media (max-width: 900px) {
   .projectContent {
+    padding: 40px 0;
     width: 80vw;
   }
 }
