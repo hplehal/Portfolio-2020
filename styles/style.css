@@ -434,10 +434,6 @@ footer p {
   opacity: 1;
 }
 
-.home {
-  background-color: rgba(14, 26, 58, 0.7);
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -503,6 +499,8 @@ nav {
 }
 
 .banner {
+  background-color: rgba(14, 26, 58, 0.7);
+  height: 100vh;
   color: #fff;
   text-align: center;
   display: -webkit-box;
@@ -518,7 +516,6 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 200px;
 }
 
 .banner h1 {
@@ -535,6 +532,9 @@ nav {
 @media (max-width: 930px) {
   .banner h1 {
     font-size: 6rem;
+  }
+  .banner p {
+    font-size: 2.5rem;
   }
 }
 
@@ -668,7 +668,7 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .aboutMe h3 {
@@ -795,7 +795,7 @@ ul li {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(100px, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-row-gap: 2rem;
   padding: 0 10rem;
 }

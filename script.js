@@ -100,6 +100,7 @@ portfolioApp.typed = function () {
     }
 }
 
+// To change the color of navbar when the page is scrolled pass the header
 portfolioApp.navScroll = function () {
     if ($(window).scrollTop() >= 50) {
         $("nav").addClass("navScroll");
