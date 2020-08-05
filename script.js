@@ -23,6 +23,23 @@ portfolioApp.init = function () {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+
+    /*----------------------------------------------
+        01. Hamburger menu
+    -----------------------------------------------*/
+
+    $("#hamburger").on('click', (e) => {
+        const className = ` ${hamburger.className} `;
+        if (className.includes(' open ')) {
+            e.currentTarget.className = className.replace(' open ', ' ');
+        } else {
+            e.currentTarget.className += ' open';
+        }
+    })
+
+    $(".container").on('click', function () {
+        $(this).toggleClass("menu-expanded");
+    })
     /*----------------------------------------------
           02. window height
       -----------------------------------------------*/
@@ -30,12 +47,12 @@ portfolioApp.init = function () {
 
 
     /*--------------------------------
-      04. Smooth Scroll
+      03. Smooth Scroll
   ----------------------------------*/
     portfolioApp.smoothScroll();
 
     /*--------------------------------
-       08. Window Scroll
+       04. Window Scroll
    ----------------------------------*/
     $(window).on("scroll", function () {
 
@@ -55,7 +72,7 @@ portfolioApp.init = function () {
     });
 
     /*--------------------------------
-        09. Window Resize
+        05. Window Resize
     ----------------------------------*/
     $(window).on("resize", function () {
 
@@ -65,7 +82,7 @@ portfolioApp.init = function () {
 
     portfolioApp.navScroll();
     /*--------------------------------
-     11. typed Plugin
+     06. typed Plugin
  ----------------------------------*/
     portfolioApp.typed();
 }
