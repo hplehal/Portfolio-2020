@@ -37,13 +37,15 @@ nav{
     .hamburgerList{
         display: flex;
         width: 40vw;
-        background-color: #e9ebf8;
     }
     .hamburgerLinks {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
+        li{
+            padding: 5px;
+        }
     }
 }
 #hamburger {

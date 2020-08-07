@@ -486,7 +486,6 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 40vw;
-  background-color: #e9ebf8;
 }
 
 .menu-expanded .hamburgerLinks {
@@ -501,6 +500,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-expanded .hamburgerLinks li {
+  padding: 5px;
 }
 
 #hamburger {
