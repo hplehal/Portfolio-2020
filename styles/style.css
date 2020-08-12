@@ -514,8 +514,8 @@ nav {
   float: right;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -530,8 +530,8 @@ nav {
   left: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #hamburger span:nth-child(1) {
@@ -571,6 +571,10 @@ nav {
 
 .navScroll {
   background-color: #174dad;
+}
+
+.navScrollHeight {
+  height: 35vh;
 }
 
 .navLogo {
