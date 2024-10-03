@@ -814,8 +814,8 @@ ul li {
 }
 
 .aboutMe img {
-  -webkit-box-shadow: -20px 20px;
-          box-shadow: -20px 20px;
+  -webkit-box-shadow: -20px 20px 50px;
+          box-shadow: -20px 20px 50px;
 }
 
 @media (max-width: 930px) {
