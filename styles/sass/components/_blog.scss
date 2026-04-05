@@ -5,11 +5,12 @@
     article{
         margin: 50px;
         width: 50vw;
-        box-shadow: 0px 2px 15px 0 rgba(0,0,0,0.08);
-        background-color:#fff;
+        box-shadow: 0px 2px 15px 0 rgba(0,0,0,0.3);
+        background-color: #1e293b;
+        border: 1px solid #1e3a5f;
 
         h3 {
-            color: #111;
+            color: #e2e8f0;
             text-transform: capitalize;
             font-size: 1.8rem;
             font-weight: 700;
@@ -17,16 +18,17 @@
         }
         p{
             font-size: 1.5rem;
+            color: #94a3b8;
         }
         &:hover, &:focus {
             img{
                 transform: scale(1.1);
             }
             h3 {
-                color:#174dad;
+                color:#00d4ff;
             }
 
-        }   
+        }
         .blogImg {
             overflow: hidden;
             position: relative;
@@ -37,13 +39,16 @@
         }
         .articleContent{
             padding:20px;
+            .bold {
+                color: #00d4ff;
+            }
         }
-      
+
     }
 
     @include responsiveMedia(tablet) {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
         align-items: center;
     }
 
@@ -54,4 +59,3 @@
     }
 
 }
-

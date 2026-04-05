@@ -4,7 +4,7 @@
     flex-direction: row;
     padding: 50px 0;
     h3 {
-        color: #174dad;
+        color: #00d4ff;
         text-transform: capitalize;
         font-size: 2.5rem;
         font-weight: 700;
@@ -14,7 +14,8 @@
         width:35vw;
     }
     img{
-        box-shadow: -20px 20px;
+        box-shadow: -10px 10px 30px rgba(0, 212, 255, 0.15);
+        border: 1px solid #1e3a5f;
     }
     @include responsiveMedia(tablet) {
         flex-direction: column;
@@ -36,15 +37,15 @@
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 1px;
-        border: 2px solid #174dad;
+        border: 2px solid #00d4ff;
         padding: 18px 20px;
-        transition: all 0.3s ease-in-out; 
+        transition: all 0.3s ease-in-out;
         &:first-of-type{
-            color: #fff;
-            background-color: #174dad;
+            color: #0a0e1a;
+            background-color: #00d4ff;
             margin-right: 30px;
             &:hover, &:focus {
-                color: #174dad;
+                color: #00d4ff;
                 background-color: transparent;
             }
             @include responsiveMedia(tablet) {
@@ -54,10 +55,10 @@
         }
 
         &:last-of-type {
-            color:#174dad;
+            color:#00d4ff;
             &:hover, &:focus {
-                color: #fff;
-                background-color: #174dad;
+                color: #0a0e1a;
+                background-color: #00d4ff;
             }
         }
 
@@ -65,7 +66,7 @@
     @include responsiveMedia(tablet) {
         display: flex;
         flex-direction: column;
-        
+
        }
 }
 
@@ -75,6 +76,9 @@
     width: 40vw;
     padding-left: 50px;
     justify-content: center;
+    p {
+        color: #94a3b8;
+    }
     @include responsiveMedia(tablet) {
         padding-left: 0px;
         width: 60vw;

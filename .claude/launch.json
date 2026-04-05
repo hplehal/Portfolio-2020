@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["-c", "export PATH=/opt/homebrew/bin:$PATH && npx http-server /Users/tejlehal/Documents/dev/Portfolio-2020 -p 8080 -c-1"],
+      "port": 8080
+    }
+  ]
+}
